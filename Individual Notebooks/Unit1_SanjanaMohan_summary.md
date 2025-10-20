@@ -1,19 +1,15 @@
-Insights:
+Findings
 
-Gender Imbalance: From the output above, we can determine that males tend to make more trips using citi bikes when compared to females. We should take this finding with a grain of salt due to the existance of unknown values and missing data. This could be an area to look into further to determin why this difference exists.
+Through the EDA, several patterns emerged. First, there was a clear gender imbalance, with male riders accounting for a considerably higher share of total trips. However, the presence of unknown and missing values suggests that this result should be interpreted with a grain of salt and could signal underlying issues in data completeness or demographic accessibility.
 
-Difference in trip distances by User Type: According to our findings above, customers seem to take loger trips on average when compared to subscribers. This might be because when customers do choose to pay to make a trip using citibike, they want to make the most out of it and therefore, use it longer while subscribers, since they use the service more often, do not feel the pressure to prolong their trip.
+Second, there was a distinct difference in trip behaviour by user type. Customers tended to take longer trips on average, while subscribers made more frequent but shorter trips. This most likely reflects differences in motivation and familiarity… subscribers use the service regularly and efficiently, while casual customers aim to make the most out of each paid ride.
 
-Popular Stations: A relatively small number of station pairings make up a large volume of trips. This hints at key routes that are popular in demand and might require more frequent bike rebalancing to ensure smooth processes. we should also take into account the large volume of missing data while interpreting this finding.
+Lastly, the popularity of certain station pairings and time periods stood out. A small subset of routes contributed disproportionately to total rides, particularly during peak commuting hours (7–9 AM and 6–7 PM). These findings highlight both demand concentration and potential areas where citi bike rebalancing efforts are most necessary.
 
-Popular Times: The most popular times that the citi bikes are being used according to the data is from 7 to 9 am and from 6 to 7 pm. This makes sense as these are the usual timings that children go to school and that office workers go to and come back from their offices.
+What Changed After Validation
 
-Actionable Recommendations:
+After validating the data and reviewing null values, I recognized the extent to which missing or incomplete fields affected reliability, particularly in gender, user type and station data. I refined my interpretations accordingly, focusing on trends that were consistently supported across multiple variables instead of drawing conclusions from incomplete subsets. This validation process reinforced the importance of data integrity when generating operational insights and highlighted where NYC DOT could strengthen their data collection methods.
 
-Targeted Marketing Campaigns: NYC DOT might want to focus on marketing campaigns that help make their services feel more accessible and safe for more female riders as well to adress the gender imbalance in terms of ridership.
+What I Propose
 
-Proactive citi bike rebalancing: Use the information collected regarding the most popular stations and times to actively rebalance bikes in these stations to avoid customer congestion. This will enable citibikes to be more readily availiable to all customers who want to use them.
-
-Collect more accurate and usable data: Find a way to minimize and account for missing and null values to make the data more usable.
-
-Incentives for Subscribers: Provide more compelling incentives for casual customers to become subscribers to promote brand loyalty and reduce the churn rate.
+Based on these findings, I propose a few targeted actions. First, develop gender-inclusive marketing and safety campaigns to attract more female riders and reduce perceived barriers to participation. I also propose more inclusivity across both genders as well as age groups, making the process more accessible for older and younger age groups outside of the 20 to 50 years range. Second, implement proactive rebalancing strategies informed by real-time usage data from high-traffic routes and times to prevent bike shortages. Third, improve data accuracy and completeness by standardising collection processes and reducing null entries in demographic and station records. Finally, offering subscriber incentives for casual users could build loyalty and smooth usage patterns throughout the day.
