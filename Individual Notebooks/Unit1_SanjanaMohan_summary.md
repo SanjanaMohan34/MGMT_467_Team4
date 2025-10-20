@@ -2,7 +2,7 @@ Findings
 
 Through the EDA, several patterns emerged. First, there was a clear gender imbalance, with male riders accounting for a considerably higher share of total trips. However, the presence of unknown and missing values suggests that this result should be interpreted with a grain of salt and could signal underlying issues in data completeness or demographic accessibility.
 
-Second, there was a distinct difference in trip behaviour by user type. Customers tended to take longer trips on average, while subscribers made more frequent but shorter trips. This most likely reflects differences in motivation and familiarity… subscribers use the service regularly and efficiently, while casual customers aim to make the most out of each paid ride.
+Second, there was a distinct difference in trip behaviour by user type. Customers tended to take longer trips on average, while subscribers made more frequent but shorter trips. This most likely reflects differences in motivation and familiarity… subscribers use the service regularly and efficiently, while casual customers aim to make the most out of each paid ride. On the other hand, through my looker studio dashboard analysis of the KPIs, we see that on average, subscribers make significantly more number of trips when compared to casual customers.
 
 Lastly, the popularity of certain station pairings and time periods stood out. A small subset of routes contributed disproportionately to total rides, particularly during peak commuting hours (7–9 AM and 6–7 PM). These findings highlight both demand concentration and potential areas where citi bike rebalancing efforts are most necessary.
 
