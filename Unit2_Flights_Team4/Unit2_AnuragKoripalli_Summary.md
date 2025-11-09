@@ -1,8 +1,5 @@
 # Unit 2 Summary — Predictive Modeling at Scale with BQML  
 **Author:** Anurag Koripalli  
-**Course:** Business Analytics & Information Management  
-**Project:** U.S. Flight Delays & Diversion Prediction  
-
 ---
 
 ## Project Overview
