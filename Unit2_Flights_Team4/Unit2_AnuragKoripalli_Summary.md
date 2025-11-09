@@ -5,7 +5,7 @@
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 This project explored how predictive modeling in BigQuery ML can support airline operations through two key questions:  
 1. **Regression:** Can we estimate arrival delay minutes (`arr_delay`) to improve scheduling and resource planning?  
 2. **Classification:** Can we classify the probability a flight is diverted to better manage disruption responses?
@@ -14,7 +14,7 @@ We used the *bigquery-public-data.flights* dataset and built a full analytical p
 
 ---
 
-## ✈️ Regression: Predicting Arrival Delay
+## Regression: Predicting Arrival Delay
 A **linear regression** model was trained using six features: `dep_delay`, `distance`, `carrier`, `origin`, `dest`, and `day_of_week`.  
 - **MAE:** ~184 minutes  
 - **R²:** 0.52  
@@ -23,7 +23,7 @@ This means the model’s predictions are, on average, within about three hours o
 
 ---
 
-## 🧭 Classification: Predicting Flight Diversions
+## Classification: Predicting Flight Diversions
 A **logistic regression** classifier predicted the `diverted` label (Boolean).  
 - **Baseline model:** AUC = 0.72, Accuracy = 0.983  
 - **Engineered model:** AUC = 0.74, Accuracy = 0.983  
@@ -32,18 +32,18 @@ The engineered version included a **TRANSFORM** clause creating a `route` (`orig
 
 ---
 
-## ⚙️ Threshold Optimization & Cost Policy
+## Threshold Optimization & Cost Policy
 Using a cost matrix of **C_FP = $1,000** and **C_FN = $6,000**, a threshold sweep showed that **τ = 0.70** minimized expected cost, reducing disruption costs from $13,000 to $4,000 compared to the default 0.5.  
 Operationally, this setting balances avoiding false alarms with capturing most true diversions—ideal when the cost of under-preparation outweighs that of over-preparation. Post-deployment, this threshold should be reviewed seasonally and adjusted for weather or carrier mix changes.
 
 ---
 
-## 💡 Cost & Scale Strategy
+## Cost & Scale Strategy
 Initial development used a **`LIMIT` clause** for fast iteration, followed by full-table training for production-scale runs. This approach balanced speed and cost efficiency, ensuring reproducibility without excessive BigQuery charges.
 
 ---
 
-## 🔍 Key Learnings & Governance
+## Key Learnings & Governance
 - **Feature engineering** and threshold tuning had greater business impact than adding complex models.  
 - **Interpretability** (via `ML.EXPLAIN_PREDICT`) is essential for airline operations to justify automated decisions.  
 - **Limitations:** Class imbalance (rare diversions) and lack of weather/context data constrain precision.  
