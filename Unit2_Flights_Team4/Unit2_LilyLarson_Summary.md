@@ -8,7 +8,7 @@ I learned that the airline plays a significant role in possible departure delay 
 
 **Limitations**
 
-The linear regression model's overall performance was very poor, with an R^2 value of 0.047. The logistic regression model trained to predict whether or not a flight was diverted performed much better, with an accuracy of 0.98. However, precision, recall, and f1-scores were all very low, indicating a imbalanced dataset. The model appears accurate but, quite possibly, simply predicits that all flights will not be divereted. 
+The linear regression model's overall performance was very poor, with an R^2 value of 0.047. The logistic regression model trained to predict whether or not a flight was diverted performed much better, with an accuracy of 0.98. However, precision, recall, and f1-scores were all very low, indicating a imbalanced dataset. The model appears accurate but, quite possibly, simply predicits that all flights will not be divereted. This was confirmed in the confusion matrix. Only 187 of the 10,058 cases resulted in a diverted flight (1.86%).
 
 **Threshold**
 
