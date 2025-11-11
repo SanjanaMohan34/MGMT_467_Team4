@@ -4,7 +4,7 @@ Lily Larson
 
 **Insights**
 
-I learned that the airline plays a significant role in possible departure delay of a flight. While it is difficult to quanity or interpret the relationship exactly, the feature was more important in a linear regression model to predict departure deplay than the flight's distance, destination, origin, or day of the week. Distance was negatively attributed in both flights used in ML.EXPLAIN_PREDICT, so I can infer that flights which will cover a longer distance are typically less delayed than flights over shorter distances. 
+I learned that the origin airport and reporting airline play a significant role in influencing the possible arrival delay of a flight. While it is difficult to quanity or interpret the relationship exactly, the feature was significantly more important in a linear regression model to predict arrival delay than the flight's distance, destination, origin, or day of the week.
 
 **Limitations**
 
