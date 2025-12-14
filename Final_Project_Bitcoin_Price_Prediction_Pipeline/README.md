@@ -153,7 +153,7 @@ Both batch and streaming pipelines converge in BigQuery, where analytics, modeli
 ## Demo Proof (What Is Shown Live)
 
 ### Streaming Validation
-```sql
+
 SELECT
   ingestion_time,
   asset,
@@ -165,6 +165,7 @@ LIMIT 10;
 
 
 
+###Batch Validation
 
 SELECT COUNT(*) AS row_count
 FROM `<PROJECT_ID>.bitcoin_data_set.bitcoin_cleaned`;
